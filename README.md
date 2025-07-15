@@ -22,6 +22,7 @@ Copy code
 docker run -p 5000:5000 simple-time-service
 Then, open in your browser:
 http://localhost:5000
+
 ☁️ Terraform Deployment on AWS (ECS with Fargate)
 ✅ Prerequisites
 AWS CLI: Install AWS CLI
