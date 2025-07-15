@@ -4,9 +4,7 @@ A minimalist microservice built with Flask that returns the current timestamp an
 
 ---
 
-## 🚀 How It Works
-
-When you access the `/` route, it responds with a JSON object like this:
+## 🔁 Example JSON Response
 
 ```json
 {
@@ -24,14 +22,13 @@ Copy code
 docker run -p 5000:5000 simple-time-service
 Then, open in your browser:
 http://localhost:5000
-
 ☁️ Terraform Deployment on AWS (ECS with Fargate)
 ✅ Prerequisites
-AWS CLI installed: Install AWS CLI
+AWS CLI: Install AWS CLI
 
-Terraform installed: Install Terraform
+Terraform: Install Terraform
 
-AWS credentials configured locally using:
+AWS credentials configured locally:
 
 bash
 Copy code
@@ -45,10 +42,10 @@ cd terraform
 terraform init
 terraform plan
 terraform apply
-Once applied, copy the Load Balancer DNS name from the Terraform output and open it in your browser to access the deployed app.
+Once applied, the Load Balancer DNS will be shown in the output. Open that in your browser to access the app.
 
-🧼 Clean Up AWS Resources
-To avoid extra charges:
+🧼 Clean Up Resources (IMPORTANT)
+To avoid AWS charges, destroy the resources when done:
 
 bash
 Copy code
